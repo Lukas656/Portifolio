@@ -37,6 +37,7 @@
 /*************************************************************************************************/
 .main {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
@@ -44,12 +45,35 @@
 }
 /*************************************************************************************************/
 .nav {
-    background-color: #121214;
     justify-content: left;
     text-align: left;
+    background-color: #121214;
     width: 20%;
-
 }
+ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    width: 100%;
+    margin: 10px;
+    list-style: none;
+}
+
+.nav ul li a{
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 95px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav ul li:hover{
+  background-color: rgb(132, 0, 255);
+}
+
 /*************************************************************************************************/
 .content {
     width: 80%;
