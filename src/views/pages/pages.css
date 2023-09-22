@@ -1,0 +1,25 @@
+.home{
+    height: auto;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    margin-top: 15px;
+    border: 5px solid #000000;
+    border-radius: 5px;
+}
+.card .info{
+    display: flex;
+    justify-content: space-around;
+}
+.card .info h3{
+    font-size: 1rem;
+    padding: 15px;
+}
+.cards .card img{
+    width: 500px;
+} 
