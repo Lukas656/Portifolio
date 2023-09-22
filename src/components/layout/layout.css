@@ -70,7 +70,7 @@ ul li{
     font-size: 1.5rem;
 }
 
-.nav ul li:hover{
+a:hover{
   background-color: rgb(132, 0, 255);
 }
 
@@ -83,4 +83,15 @@ ul li{
 .footer {
     background-color: #121214;
     width: 100%;
+}
+p{
+  text-align: left;
+}
+
+a{
+    color: #ffff; 
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
 }
