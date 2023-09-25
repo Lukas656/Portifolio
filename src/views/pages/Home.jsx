@@ -1,24 +1,42 @@
-import './pages.css'
+import './CSS/cards.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Data from '../../data';
 
-const Home = props => (
-    <div className="home">
-        <h1>Galeria</h1>
-        <section className='cards'>
-            <div className='card'>
-                <img src="https://i.ibb.co/nDGSfT7/Batman.png" alt="Projeto #01" />
+import Header from '../../components/layout/Header'
+import Nav from '../../components/layout/Navegacao'
+import Footer from '../../components/layout/Footer'
+
+const Home = props => {
+    const listDados = Data.map(info => {
+        return (
+            <div className='card' key={Data.id}>
+                <h1>{info.titulo}</h1>
+                <img src={info.url} alt={info.descricao} />
                 <div className='info'>
-                    <h3>Data de Criação: 00/00/00000</h3>
                     <h3>
-                        Feito com: HTML , CSS, Node.JS, MongoDB, ReactJS
+                        {info.descricao}
                     </h3>
+                    <h3>Data: {info.data}</h3>
                 </div>
-                <Link to="/Thebatman">Navegar para o Projeto</Link>
+                <Link to={info.page}>Versão Final do Projeto Concluido !</Link>
             </div>
-            
-        </section>
-    </div>
-)
+        )
+    })
+
+    return (
+        <>
+            <div className='layout'>
+                <Header />
+                <Nav />
+            </div>
+            <section className='cards'>
+                {listDados}
+            </section>
+            <Footer/>
+        </>
+
+    )
+}
 
 export default Home

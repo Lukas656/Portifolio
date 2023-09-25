@@ -1,0 +1,117 @@
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+  
+.login{
+    background-color: var(--background);
+    color: var(--text-title);
+  }
+
+  .login article{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .login #back-car{
+    background-image: url('https://i.ibb.co/HGjFLKm/side-image-2x.jpg');
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;    
+  }
+  
+  .form-login{
+    width: 50%;
+    margin-top: 200px;
+  }
+
+  .logo{
+    display: flex;
+    margin: 25px;
+    position: absolute;
+  }
+  .logo p{
+    margin-top: 35px;
+  }
+  .box{
+    background-color: var(--form-background);
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+ }
+ .login header{
+   text-align: center;
+   justify-content: center;
+   display: flex;
+ }
+ .login form{
+   padding: 1px;
+ }
+ .login form input{
+   padding: 9px;
+   padding-left: 30px;
+   margin: 10px;
+ }
+ .input-check{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .input-check input{
+    margin-right: 5px;
+  }
+  .login a{
+    color: var(--primary-color);
+  }
+
+  .login button{
+    background-color: var(--primary-color);
+    margin: 15px;
+    padding: 10px;
+    width: 50%;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 1024px)
+  {
+    .login article{
+      display: block;
+    }
+    #back-car{
+        background-image: url('https://i.ibb.co/HGjFLKm/side-image-2x.jpg');
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;    
+    }
+    .form-login{
+      width: 50%;
+      margin-top: 60px;
+      
+    }
+    .logo{
+      display: flex;
+      margin: 0px;
+      top: 5px;
+      position: absolute;
+    }
+    .logo p{
+      margin-top: 15px;
+    }
+    .box{
+      background-color: var(--form-background);
+      width: 150%;
+      margin: 20%;
+      text-align: center;
+      justify-content: center;
+   }
+  }

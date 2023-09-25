@@ -1,0 +1,39 @@
+.home{
+    height: auto;
+}
+.cards{
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.card{
+    width: 100%;
+    margin-top: 15px;
+    border-bottom: 1px solid #ffff;
+    border-radius: 5px;
+}
+
+.card .info h3{
+    font-size: 1rem;
+    padding: 15px;
+    color: #c0c0c0; 
+}
+.cards .card img{
+    width: 600px;
+} 
+
+
+@media screen and (max-width: 700px){
+    .cards{
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .cards .card img{
+        width: 300px;
+    } 
+    .card .info h3{
+        font-size: 0.1rem;
+        padding: 10px;
+    }
+    
+}

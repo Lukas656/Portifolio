@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Thebatman = props => (
+const Basquetball = props => (
     <div className="pages">
        <div className='card'>
                 <div className='info'>
@@ -11,9 +11,9 @@ const Thebatman = props => (
                     </h3>
                 </div>
                 <Link to="/">Navegar para o Projeto</Link>
-                <img src="https://i.ibb.co/nDGSfT7/Batman.png" alt="Projeto #01" />
+                <img src="" alt="Projeto #01" />
             </div>
     </div>
 )
 
-export default Thebatman
+export default Basquetball

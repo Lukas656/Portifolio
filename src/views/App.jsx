@@ -3,14 +3,15 @@ import React from 'react'
 import { BrowserRouter as Router } from  'react-router-dom'
 
 
-import Layout from '../components/layout/Layout.jsx'
+import Content from '../components/layout/Content'  
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Layout />
+        <Content />
+
       </Router>
     </div>
   );

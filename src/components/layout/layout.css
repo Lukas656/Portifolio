@@ -56,7 +56,7 @@
 
 a:hover{
     border-radius: 5px;
-    color:rgb(132, 0, 255);
+    color:rgb(156, 120, 255);
 }
 
 /*************************************************************************************************/
@@ -82,7 +82,7 @@ ul li{
     margin: 15px;
 }
 a{
-    color: #c0c0c0; 
+    color:rgba(172, 161, 161, 0.829);
 }
 .footer-content{
     display: flex;

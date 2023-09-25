@@ -1,5 +1,6 @@
 import React from "react";
 import './layout.css';
+import { Link } from 'react-router-dom'
 
 const Footer = props => (
     <div className="footer">
@@ -15,6 +16,8 @@ const Footer = props => (
           <ul>
             <li><a href="https://github.com/Lukas656/Portifolio" target="_blank" rel="noopener noreferrer">Repositório Github.com</a></li>
             <li><a href="https://www.linkedin.com/in/link-lucas-santos/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><Link to="/">Voltar Para o Portifólio</Link></li>
+          
           </ul>
         </div>
         </div>
